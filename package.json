@@ -1,0 +1,31 @@
+{
+  "name": "blind-walleye",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "capture": "node scripts/capture-source.mjs",
+    "import": "node scripts/import-webflow.mjs",
+    "compare": "node scripts/compare-visual.mjs"
+  },
+  "dependencies": {
+    "next": "16.3.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "node-html-parser": "^9.0.4",
+    "pixelmatch": "^7.2.0",
+    "playwright": "1.56.1",
+    "pngjs": "^7.0.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": { "node": ">=20" }
+}
