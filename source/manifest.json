@@ -1,6 +1,6 @@
 {
   "origin": "https://www.theblindwalleye.com",
-  "capturedAt": "2026-09-27T12:45:44.408Z",
+  "capturedAt": "2026-09-27T12:48:12.543Z",
   "pages": [
     {
       "route": "/",
@@ -24,7 +24,7 @@
       "route": "__404",
       "slug": "__404",
       "status": 404,
-      "finalUrl": "https://www.theblindwalleye.com/__capture-missing-1790513144808"
+      "finalUrl": "https://www.theblindwalleye.com/__capture-missing-1790513293020"
     },
     {
       "route": "/robots.txt",
@@ -342,16 +342,79 @@
       "type": "image/jpg",
       "bytes": 109380
     },
+    "https://cdn.prod.website-files.com/64c27e4256ea86080614f333/67f6adf69066bbbff56ba5c4_New%20BIngo%20%20(1920%20x%201080%20px).png": {
+      "file": "assets/cdn.prod.website-files.com/64c27e4256ea86080614f333/67f6adf69066bbbff56ba5c4_New BIngo  (1920 x 1080 px).png",
+      "type": "image/png",
+      "bytes": 1035253
+    },
+    "https://cdn.prod.website-files.com/64c27e4256ea86080614f333/67ad33fb0d135563178a42fb_King%20of%20Diamonds%20(9).png": {
+      "file": "assets/cdn.prod.website-files.com/64c27e4256ea86080614f333/67ad33fb0d135563178a42fb_King of Diamonds (9).png",
+      "type": "image/png",
+      "bytes": 2028037
+    },
+    "https://cdn.prod.website-files.com/64c27e4256ea86080614f333/67f6afb491555f404a392199_Playfull%20Neon%20Minimalist%20Trivia%20Night%20Flyer%20(12).png": {
+      "file": "assets/cdn.prod.website-files.com/64c27e4256ea86080614f333/67f6afb491555f404a392199_Playfull Neon Minimalist Trivia Night Flyer (12).png",
+      "type": "image/png",
+      "bytes": 2710000
+    },
+    "https://cdn.prod.website-files.com/64c27e4256ea86080614f333/6906aa34504e16ebe35d1584_White%20and%20Yellow%20Puzzle%20Day%20Social%20Media%20Graphic%20(1920%20x%201080%20px)%20(11).png": {
+      "file": "assets/cdn.prod.website-files.com/64c27e4256ea86080614f333/6906aa34504e16ebe35d1584_White and Yellow Puzzle Day Social Media Graphic (1920 x 1080 px) (11).png",
+      "type": "image/png",
+      "bytes": 2079767
+    },
+    "https://cdn.prod.website-files.com/64c27e4256ea86080614f333/6906ab2c52a98dcdc5e0e522_Black%20Green%20White%20Modern%20Billiards%20Tournament%20Poster%20(1920%20x%201080%20px)%20(3).png": {
+      "file": "assets/cdn.prod.website-files.com/64c27e4256ea86080614f333/6906ab2c52a98dcdc5e0e522_Black Green White Modern Billiards Tournament Poster (1920 x 1080 px) (3).png",
+      "type": "image/png",
+      "bytes": 916260
+    },
+    "https://app-assets.website-files.com/css/webflow-https-errors.webflow.css": {
+      "file": "assets/app-assets.website-files.com/css/webflow-https-errors.webflow.css",
+      "type": "text/css",
+      "bytes": 4176
+    },
+    "https://app-assets.website-files.com/static/favicon_designer.88fce7c7f8.png": {
+      "file": "assets/app-assets.website-files.com/static/favicon_designer.88fce7c7f8.png",
+      "type": "image/png",
+      "bytes": 688
+    },
     "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/65581fbaf13dba8cbb795d5c_Beige%20Simple%20Weekly%20Menu%20(1920%20x%201080%20px).png": {
       "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/65581fbaf13dba8cbb795d5c_Beige Simple Weekly Menu (1920 x 1080 px).png",
       "type": "image/png",
       "bytes": 162418
+    },
+    "https://app-assets.website-files.com/fonts/Graphik-Medium-Web.abf6e1188f.woff2": {
+      "file": "assets/app-assets.website-files.com/fonts/Graphik-Medium-Web.abf6e1188f.woff2",
+      "type": "application/octet-stream",
+      "bytes": 34041
+    },
+    "https://app-assets.website-files.com/fonts/Graphik-Medium-Web.2523d1a466.eot": {
+      "file": "assets/app-assets.website-files.com/fonts/Graphik-Medium-Web.2523d1a466.eot",
+      "type": "application/vnd.ms-fontobject",
+      "bytes": 95762
+    },
+    "https://app-assets.website-files.com/fonts/Graphik-Medium-Web.4327644773.woff": {
+      "file": "assets/app-assets.website-files.com/fonts/Graphik-Medium-Web.4327644773.woff",
+      "type": "application/x-font-woff",
+      "bytes": 45742
+    },
+    "https://app-assets.website-files.com/fonts/Graphik-Regular-Web.5a0c1a002e.woff2": {
+      "file": "assets/app-assets.website-files.com/fonts/Graphik-Regular-Web.5a0c1a002e.woff2",
+      "type": "application/octet-stream",
+      "bytes": 30885
+    },
+    "https://app-assets.website-files.com/fonts/Graphik-Regular-Web.5e78809d4d.eot": {
+      "file": "assets/app-assets.website-files.com/fonts/Graphik-Regular-Web.5e78809d4d.eot",
+      "type": "application/vnd.ms-fontobject",
+      "bytes": 91222
+    },
+    "https://app-assets.website-files.com/fonts/Graphik-Regular-Web.9806bc37bf.woff": {
+      "file": "assets/app-assets.website-files.com/fonts/Graphik-Regular-Web.9806bc37bf.woff",
+      "type": "application/x-font-woff",
+      "bytes": 42251
     }
   },
   "external": [
     "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
-    "https://app-assets.website-files.com/css/webflow-https-errors.webflow.css",
-    "https://app-assets.website-files.com/static/favicon_designer.88fce7c7f8.png",
     "https://fonts.googleapis.com/",
     "https://fonts.gstatic.com/"
   ],
