@@ -1,0 +1,359 @@
+{
+  "origin": "https://www.theblindwalleye.com",
+  "capturedAt": "2026-09-27T12:45:44.408Z",
+  "pages": [
+    {
+      "route": "/",
+      "slug": "index",
+      "status": 200,
+      "finalUrl": "https://www.theblindwalleye.com/"
+    },
+    {
+      "route": "/menu",
+      "slug": "menu",
+      "status": 200,
+      "finalUrl": "https://www.theblindwalleye.com/menu"
+    },
+    {
+      "route": "/events",
+      "slug": "events",
+      "status": 200,
+      "finalUrl": "https://www.theblindwalleye.com/events"
+    },
+    {
+      "route": "__404",
+      "slug": "__404",
+      "status": 404,
+      "finalUrl": "https://www.theblindwalleye.com/__capture-missing-1790513144808"
+    },
+    {
+      "route": "/robots.txt",
+      "slug": null,
+      "status": 200,
+      "finalUrl": "https://www.theblindwalleye.com/robots.txt"
+    },
+    {
+      "route": "/sitemap.xml",
+      "slug": null,
+      "status": 404,
+      "finalUrl": "https://www.theblindwalleye.com/sitemap.xml"
+    },
+    {
+      "route": "/favicon.ico",
+      "slug": null,
+      "status": 404,
+      "finalUrl": "https://www.theblindwalleye.com/favicon.ico"
+    }
+  ],
+  "assets": {
+    "https://cdn.prod.website-files.com/": null,
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/css/the-blind-walleyes-cool-site.webflow.shared.084dec916.css": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/css/the-blind-walleyes-cool-site.webflow.shared.084dec916.css",
+      "type": "text/css",
+      "bytes": 104876
+    },
+    "https://cdn.prod.website-files.com/img/favicon.ico": {
+      "file": "assets/cdn.prod.website-files.com/img/favicon.ico",
+      "type": "image/x-icon",
+      "bytes": 15086
+    },
+    "https://cdn.prod.website-files.com/img/webclip.png": {
+      "file": "assets/cdn.prod.website-files.com/img/webclip.png",
+      "type": "image/png",
+      "bytes": 4807
+    },
+    "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64bc87b3082c3534bd573b2b": {
+      "file": "assets/d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js__P3NpdGU9NjRiYzg3YjMwODJjMzUzNGJkNTczYjJi",
+      "type": "application/javascript",
+      "bytes": 89476
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/js/webflow.schunk.36b8fb49256177c8.js": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/js/webflow.schunk.36b8fb49256177c8.js",
+      "type": "text/javascript",
+      "bytes": 41429
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/js/webflow.0d9a1cfc.7986c33d78e96d6d.js": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/js/webflow.0d9a1cfc.7986c33d78e96d6d.js",
+      "type": "text/javascript",
+      "bytes": 149338
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64f2304b54cb2f3cd595fb25_0-1.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64f2304b54cb2f3cd595fb25_0-1.png",
+      "type": "image/png",
+      "bytes": 157727
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64f2300ecdf5b390a153591a_0-2.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64f2300ecdf5b390a153591a_0-2.png",
+      "type": "image/png",
+      "bytes": 172037
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64bc968f8af96339083a473f_lake.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64bc968f8af96339083a473f_lake.jpg",
+      "type": "image/jpeg",
+      "bytes": 593315
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c080807a8f4e5e304b258f_644f22c60a683a02c135775f_vector-bottom-coffeebar-x-webflow-template.svg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c080807a8f4e5e304b258f_644f22c60a683a02c135775f_vector-bottom-coffeebar-x-webflow-template.svg",
+      "type": "image/svg+xml",
+      "bytes": 2677
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08a664aa4f4832ebaaf32_noun-kayak-3139415-203F31.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08a664aa4f4832ebaaf32_noun-kayak-3139415-203F31.png",
+      "type": "image/png",
+      "bytes": 94000
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08cb03cd3a8d0d1c7d2cd_noun-snow-mobile-2538505-203F31.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08cb03cd3a8d0d1c7d2cd_noun-snow-mobile-2538505-203F31.png",
+      "type": "image/png",
+      "bytes": 49985
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08f0a7f0386156375ca06_noun-beers-1159050-203F31.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08f0a7f0386156375ca06_noun-beers-1159050-203F31.png",
+      "type": "image/png",
+      "bytes": 91687
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c868ccff69d2ef14ce1b97_Christine%20%26%20Fred.jpeg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c868ccff69d2ef14ce1b97_Christine & Fred.jpeg",
+      "type": "image/jpeg",
+      "bytes": 862028
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c278e28977b94249b7318c_line-rounded-check-circle-white-brix-templates.svg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c278e28977b94249b7318c_line-rounded-check-circle-white-brix-templates.svg",
+      "type": "image/svg+xml",
+      "bytes": 638
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash.jpg",
+      "type": "image/jpeg",
+      "bytes": 4125679
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c25e1f72c965807acb6920_facebook-social-media-icon-brix-templates.svg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c25e1f72c965807acb6920_facebook-social-media-icon-brix-templates.svg",
+      "type": "image/svg+xml",
+      "bytes": 417
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c25e1f72c965807acb6921_instagram-social-media-icon-brix-templates.svg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c25e1f72c965807acb6921_instagram-social-media-icon-brix-templates.svg",
+      "type": "image/svg+xml",
+      "bytes": 1322
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64f2304b54cb2f3cd595fb25_0-1-p-500.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64f2304b54cb2f3cd595fb25_0-1-p-500.png",
+      "type": "image/png",
+      "bytes": 48494
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64f2300ecdf5b390a153591a_0-2-p-500.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64f2300ecdf5b390a153591a_0-2-p-500.png",
+      "type": "image/png",
+      "bytes": 85320
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64bc968f8af96339083a473f_lake-p-500.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64bc968f8af96339083a473f_lake-p-500.jpg",
+      "type": "image/jpg",
+      "bytes": 38585
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64bc968f8af96339083a473f_lake-p-800.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64bc968f8af96339083a473f_lake-p-800.jpg",
+      "type": "image/jpg",
+      "bytes": 93535
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64bc968f8af96339083a473f_lake-p-1080.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64bc968f8af96339083a473f_lake-p-1080.jpg",
+      "type": "image/jpg",
+      "bytes": 162782
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08a664aa4f4832ebaaf32_noun-kayak-3139415-203F31-p-500.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08a664aa4f4832ebaaf32_noun-kayak-3139415-203F31-p-500.png",
+      "type": "image/png",
+      "bytes": 30128
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08a664aa4f4832ebaaf32_noun-kayak-3139415-203F31-p-800.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08a664aa4f4832ebaaf32_noun-kayak-3139415-203F31-p-800.png",
+      "type": "image/png",
+      "bytes": 49325
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08a664aa4f4832ebaaf32_noun-kayak-3139415-203F31-p-1080.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08a664aa4f4832ebaaf32_noun-kayak-3139415-203F31-p-1080.png",
+      "type": "image/png",
+      "bytes": 68622
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08cb03cd3a8d0d1c7d2cd_noun-snow-mobile-2538505-203F31-p-500.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08cb03cd3a8d0d1c7d2cd_noun-snow-mobile-2538505-203F31-p-500.png",
+      "type": "image/png",
+      "bytes": 16788
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08cb03cd3a8d0d1c7d2cd_noun-snow-mobile-2538505-203F31-p-800.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08cb03cd3a8d0d1c7d2cd_noun-snow-mobile-2538505-203F31-p-800.png",
+      "type": "image/png",
+      "bytes": 26433
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08cb03cd3a8d0d1c7d2cd_noun-snow-mobile-2538505-203F31-p-1080.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08cb03cd3a8d0d1c7d2cd_noun-snow-mobile-2538505-203F31-p-1080.png",
+      "type": "image/png",
+      "bytes": 36361
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08f0a7f0386156375ca06_noun-beers-1159050-203F31-p-500.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08f0a7f0386156375ca06_noun-beers-1159050-203F31-p-500.png",
+      "type": "image/png",
+      "bytes": 30658
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08f0a7f0386156375ca06_noun-beers-1159050-203F31-p-800.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08f0a7f0386156375ca06_noun-beers-1159050-203F31-p-800.png",
+      "type": "image/png",
+      "bytes": 50806
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08f0a7f0386156375ca06_noun-beers-1159050-203F31-p-1080.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c08f0a7f0386156375ca06_noun-beers-1159050-203F31-p-1080.png",
+      "type": "image/png",
+      "bytes": 71352
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c868ccff69d2ef14ce1b97_Christine%20%26%20Fred-p-500.jpeg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c868ccff69d2ef14ce1b97_Christine & Fred-p-500.jpeg",
+      "type": "image/jpeg",
+      "bytes": 78890
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c868ccff69d2ef14ce1b97_Christine%20%26%20Fred-p-800.jpeg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c868ccff69d2ef14ce1b97_Christine & Fred-p-800.jpeg",
+      "type": "image/jpeg",
+      "bytes": 168510
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c868ccff69d2ef14ce1b97_Christine%20%26%20Fred-p-1080.jpeg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c868ccff69d2ef14ce1b97_Christine & Fred-p-1080.jpeg",
+      "type": "image/jpeg",
+      "bytes": 270924
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash-p-500.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash-p-500.jpg",
+      "type": "image/jpg",
+      "bytes": 33162
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash-p-800.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash-p-800.jpg",
+      "type": "image/jpg",
+      "bytes": 73872
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash-p-1080.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash-p-1080.jpg",
+      "type": "image/jpg",
+      "bytes": 121659
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash-p-1600.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash-p-1600.jpg",
+      "type": "image/jpg",
+      "bytes": 247636
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash-p-2000.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash-p-2000.jpg",
+      "type": "image/jpg",
+      "bytes": 377215
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash-p-2600.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash-p-2600.jpg",
+      "type": "image/jpg",
+      "bytes": 627631
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash-p-3200.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64c27936bed59200e42d57b3_fern-m-lomibao-Pfk0_6dP_GU-unsplash-p-3200.jpg",
+      "type": "image/jpg",
+      "bytes": 947356
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64cad2fd421c2ac62d7a0c48_Screen%20Shot%202023-08-02%20at%205.04.27%20PM.png": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/64cad2fd421c2ac62d7a0c48_Screen Shot 2023-08-02 at 5.04.27 PM.png",
+      "type": "image/png",
+      "bytes": 189220
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815097e7ecfe7983fde6_Page%201.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815097e7ecfe7983fde6_Page 1.jpg",
+      "type": "image/jpeg",
+      "bytes": 306893
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815a3df324693083da41_Page%202.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815a3df324693083da41_Page 2.jpg",
+      "type": "image/jpeg",
+      "bytes": 301469
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff816447f7d622160a8c94_Page%203.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff816447f7d622160a8c94_Page 3.jpg",
+      "type": "image/jpeg",
+      "bytes": 217343
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff81851e00390868947e21_Page%204.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff81851e00390868947e21_Page 4.jpg",
+      "type": "image/jpeg",
+      "bytes": 206064
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815097e7ecfe7983fde6_Page%201-p-500.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815097e7ecfe7983fde6_Page 1-p-500.jpg",
+      "type": "image/jpg",
+      "bytes": 49921
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815097e7ecfe7983fde6_Page%201-p-800.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815097e7ecfe7983fde6_Page 1-p-800.jpg",
+      "type": "image/jpg",
+      "bytes": 104788
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815097e7ecfe7983fde6_Page%201-p-1080.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815097e7ecfe7983fde6_Page 1-p-1080.jpg",
+      "type": "image/jpg",
+      "bytes": 158866
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815a3df324693083da41_Page%202-p-500.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815a3df324693083da41_Page 2-p-500.jpg",
+      "type": "image/jpg",
+      "bytes": 51393
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815a3df324693083da41_Page%202-p-800.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815a3df324693083da41_Page 2-p-800.jpg",
+      "type": "image/jpg",
+      "bytes": 104291
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815a3df324693083da41_Page%202-p-1080.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff815a3df324693083da41_Page 2-p-1080.jpg",
+      "type": "image/jpg",
+      "bytes": 156205
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff816447f7d622160a8c94_Page%203-p-500.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff816447f7d622160a8c94_Page 3-p-500.jpg",
+      "type": "image/jpg",
+      "bytes": 36424
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff816447f7d622160a8c94_Page%203-p-800.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff816447f7d622160a8c94_Page 3-p-800.jpg",
+      "type": "image/jpg",
+      "bytes": 74441
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff816447f7d622160a8c94_Page%203-p-1080.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff816447f7d622160a8c94_Page 3-p-1080.jpg",
+      "type": "image/jpg",
+      "bytes": 111906
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff81851e00390868947e21_Page%204-p-500.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff81851e00390868947e21_Page 4-p-500.jpg",
+      "type": "image/jpg",
+      "bytes": 34497
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff81851e00390868947e21_Page%204-p-800.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff81851e00390868947e21_Page 4-p-800.jpg",
+      "type": "image/jpg",
+      "bytes": 68791
+    },
+    "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff81851e00390868947e21_Page%204-p-1080.jpg": {
+      "file": "assets/cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/68ff81851e00390868947e21_Page 4-p-1080.jpg",
+      "type": "image/jpg",
+      "bytes": 109380
+    }
+  },
+  "external": [
+    "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+    "https://app-assets.website-files.com/css/webflow-https-errors.webflow.css",
+    "https://app-assets.website-files.com/static/favicon_designer.88fce7c7f8.png",
+    "https://fonts.googleapis.com/",
+    "https://fonts.gstatic.com/"
+  ],
+  "failures": [
+    {
+      "url": "https://cdn.prod.website-files.com/",
+      "status": 403
+    }
+  ]
+}
