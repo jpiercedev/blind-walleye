@@ -53,6 +53,8 @@ export function WebflowDocument({ page }: { page: WebflowPage }) {
           <link key={`l${i}`} {...props(l)} />
         ),
       )}
+      {/* Post-migration responsive fixes; same precedence group, so it loads after the Webflow CSS. */}
+      <link rel="stylesheet" href="/responsive.css" precedence="webflow" />
       {page.head.styles.map((s, i) => (
         <style key={`s${i}`} {...props(s.attrs)} dangerouslySetInnerHTML={{ __html: s.css }} />
       ))}
@@ -65,6 +67,7 @@ export function WebflowDocument({ page }: { page: WebflowPage }) {
         <ScriptTag key={`b${i}`} script={s} />
       ))}
       {page.bodyHtml.includes('w-form') && <script src="/contact-form.js" />}
+      {page.bodyHtml.includes('menu-image') && <script src="/menu-viewer.js" />}
     </>
   );
 }

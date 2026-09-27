@@ -79,6 +79,61 @@ function localizeTree(root, base) {
   }
 }
 
+// Post-migration markup fixes, applied to the captured body HTML. Each must match exactly `count` times per page
+// that contains its marker, so a changed capture fails loudly instead of silently dropping a fix.
+const PATCHES = [
+  {
+    // Anchor for the "Contact Us" CTA (the Webflow button pointed at "#").
+    find: '<div class="contact-us">',
+    replace: '<div id="contact" class="contact-us">',
+  },
+  {
+    find: '<a href="#" class="brix---btn-secondary-2 w-button"><strong class="bold-text-2">Contact Us</strong></a>',
+    replace: '<a href="#contact" class="brix---btn-secondary-2 w-button"><strong class="bold-text-2">Contact Us</strong></a>',
+  },
+  {
+    // Tap-to-call; visible text unchanged.
+    find: '<strong class="footer-text-center">(715)276-7419</strong>',
+    replace: '<a href="tel:+17152767419" class="footer-phone-link"><strong class="footer-text-center">(715)276-7419</strong></a>',
+  },
+];
+
+function applyPatches(html, slug) {
+  for (const { find, replace } of PATCHES) {
+    const n = html.split(find).length - 1;
+    if (n > 1) throw new Error(`patch matched ${n} times on ${slug}: ${find}`);
+    html = html.replace(find, replace);
+  }
+  return html;
+}
+
+// Natural pixel size of a PNG or JPEG, for flyer aspect ratios.
+async function imageSize(publicUrl) {
+  const buf = await fs.readFile(path.join(PUBLIC_DIR, decodeURIComponent(publicUrl)));
+  if (buf.readUInt32BE(0) === 0x89504e47) return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) };
+  for (let i = 2; i < buf.length; ) {
+    const marker = buf.readUInt16BE(i);
+    if (marker >= 0xffc0 && marker <= 0xffcf && ![0xffc4, 0xffc8, 0xffcc].includes(marker)) {
+      return { w: buf.readUInt16BE(i + 7), h: buf.readUInt16BE(i + 5) };
+    }
+    i += 2 + buf.readUInt16BE(i + 2);
+  }
+  return null;
+}
+
+// Event flyers are CSS backgrounds with a fixed height; expose each image's natural ratio so small screens can
+// show the whole flyer (see public/responsive.css).
+async function tagFlyerRatios(html) {
+  const re = /style="background-image:url\(&quot;(\/wf\/[^&]+)&quot;\)" class="div-block-4"/g;
+  let out = html;
+  for (const m of html.matchAll(re)) {
+    const size = await imageSize(m[1]);
+    if (!size) throw new Error('unreadable flyer ' + m[1]);
+    out = out.replace(m[0], m[0].replace('&quot;)"', `&quot;);--flyer-ratio:${size.w} / ${size.h}"`));
+  }
+  return out;
+}
+
 const attrsOf = (el) => (el ? { ...el.attributes } : {});
 
 function readHead(head, base) {
@@ -159,7 +214,7 @@ async function importPages() {
       else if (last.nodeType === 1 && last.tagName === 'SCRIPT') bodyScripts.unshift(scriptOf(nodes.pop(), base));
       else break;
     }
-    const bodyHtml = nodes.map((n) => n.toString()).join('');
+    const bodyHtml = await tagFlyerRatios(applyPatches(nodes.map((n) => n.toString()).join(''), p.slug));
 
     const page = {
       route: p.route,

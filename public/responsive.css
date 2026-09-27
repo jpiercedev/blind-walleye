@@ -1,0 +1,173 @@
+/*
+ * Post-migration responsive fixes, loaded after the Webflow stylesheet.
+ * Every rule is scoped to tablet/mobile widths (<= 991px) so the desktop design is unchanged.
+ * Webflow breakpoints: 991 (tablet), 767 (mobile landscape), 479 (mobile portrait).
+ */
+
+/* Footer phone is a tel: link; visually identical to the plain text at every width. */
+.footer-phone-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Menu page images open in the full-size viewer (public/menu-viewer.js). */
+.menu-image[data-viewer] {
+  cursor: zoom-in;
+}
+
+@media screen and (max-width: 991px) {
+  /* ---- Header: compact logo; the hero clears it ---------------------------------------------------------- */
+  .brix---header-wrapper-transparent-2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .brix---header-logo-2 {
+    max-width: 110px;
+  }
+  .brix---hero-bg-image-dark-header-top-2 {
+    padding-top: 170px;
+  }
+
+  /* ---- Mobile nav: 44px targets, readable active item ----------------------------------------------------- */
+  .brix---header-wrapper-transparent-2 .brix---hamburger-menu-wrapper-2.w-nav-button {
+    box-sizing: border-box;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 1px 0;
+  }
+  .brix---header-nav-list-item-2 {
+    width: 100%;
+    margin-bottom: 4px;
+  }
+  .brix---header-nav-menu-wrapper-white-2 .brix---header-nav-link-white-2 {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  .brix---header-nav-menu-wrapper-white-2 .brix---header-nav-link-white-2.w--current {
+    color: var(--walleye-green);
+    border-bottom: 0;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+  }
+
+  /* ---- Contact form: the Webflow build forces 700px-wide rows; fit the container instead -------------------- */
+  .brix---grid-contact-v10 > * {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 700px;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .brix---form-grid-2-columns,
+  .div-block-18,
+  .div-block-19,
+  .div-block-20,
+  .div-block-21 {
+    min-width: 0;
+    width: 100%;
+  }
+  .contact-us {
+    padding-bottom: 118px;
+  }
+
+  /* ---- Event flyers: show the whole image at its natural ratio (16:9 or 1:1) ------------------------------ */
+  .div-block-4 {
+    aspect-ratio: var(--flyer-ratio, 16 / 9);
+    min-height: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .collection-item {
+    min-height: 0;
+  }
+  /* Weekly and Special Events stack, and special-event cards go full width instead of two narrow columns. */
+  .section {
+    display: block;
+  }
+  .collection-list-wrapper---multi .events.w-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .collection-list-wrapper---multi .collection-item.w-col {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* ---- Footer: 44px social and phone targets without enlarging the 30px icon squares ------------------------ */
+  .brix---social-media-grid-right---t-center {
+    grid-column-gap: 0;
+    column-gap: 0;
+  }
+  .brix---social-icon-square-30px {
+    position: relative;
+    isolation: isolate;
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+    min-height: 44px;
+    margin-right: 0;
+    background-color: transparent;
+  }
+  .brix---social-icon-square-30px::before {
+    content: '';
+    position: absolute;
+    inset: 7px;
+    z-index: -1;
+    border-radius: inherit;
+    background-color: var(--elements-webflow-library-secondary--color-2);
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  .footer-phone-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .brix---header-wrapper-transparent-2 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .brix---header-logo-2 {
+    max-width: 96px;
+  }
+  .brix---hero-bg-image-dark-header-top-2 {
+    padding-top: 136px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .brix---header-logo-2 {
+    max-width: 88px;
+  }
+  .brix---header-logo-link-2.w--current {
+    margin-top: 0;
+  }
+  .brix---hamburger-menu-wrapper-2 {
+    margin-top: 0;
+  }
+  .brix---hero-bg-image-dark-header-top-2 {
+    padding-top: 124px;
+  }
+  /* Webflow pushed the hero logo 195px below the already-padded hero. */
+  .image-5 {
+    margin-top: 0;
+  }
+
+  /* "Contact Us" CTA was hidden on phones; it now jumps to the form. */
+  .brix---buttons-row-3 {
+    display: flex;
+  }
+
+  /* Container padding is 0 here in the Webflow build, leaving the form flush with the screen edges. */
+  .brix---container-default-6 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
