@@ -1,0 +1,11 @@
+{
+  "origin": "https://www.theblindwalleye.com",
+  "lang": "en",
+  "wfSite": "64bc87b3082c3534bd573b2b",
+  "routes": [
+    "/",
+    "/menu",
+    "/events"
+  ],
+  "sharedHead": true
+}

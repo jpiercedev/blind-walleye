@@ -1,0 +1,37 @@
+{
+  "route": "__404",
+  "slug": "__404",
+  "htmlAttrs": {
+    "lang": "en"
+  },
+  "head": {
+    "title": "404 - Page not found",
+    "metas": [
+      {
+        "content": "The page you are looking for doesn't exist or has been moved.",
+        "name": "description"
+      },
+      {
+        "content": "width=device-width, initial-scale=1",
+        "name": "viewport"
+      }
+    ],
+    "links": [
+      {
+        "href": "/wf/app-assets.website-files.com/css/webflow-https-errors.webflow.css",
+        "rel": "stylesheet",
+        "type": "text/css"
+      },
+      {
+        "href": "/wf/app-assets.website-files.com/static/favicon_designer.88fce7c7f8.png",
+        "rel": "shortcut icon",
+        "type": "image/x-icon"
+      }
+    ],
+    "styles": [],
+    "scripts": []
+  },
+  "bodyAttrs": {},
+  "bodyHtml": "\n<div class=\"utility-wrapper\">\n    <div class=\"utility-container\">\n        <div class=\"text-mono\">404</div>\n        <div class=\"utility-content\">\n            <h1>Page not found<br></h1>\n            <p>The page you are looking for doesn&#x27;t exist or has been moved.</p>\n        </div>\n        <div></div>\n    </div>\n</div>",
+  "bodyScripts": []
+}
