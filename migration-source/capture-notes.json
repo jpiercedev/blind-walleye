@@ -1,0 +1,23 @@
+{
+  "source": "https://www.theblindwalleye.com/",
+  "routes": [
+    "/",
+    "/menu",
+    "/events"
+  ],
+  "sitemap": "404",
+  "failed": [
+    {
+      "url": "https://cdn.prod.website-files.com",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/64bc87b3082c3534bd573b2b/65581fbaf13dba8cbb795d5c_Beige%20Simple%20Weekly%20Menu%20(1920%20x%201080%20px",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
