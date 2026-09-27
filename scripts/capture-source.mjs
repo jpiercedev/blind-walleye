@@ -30,6 +30,7 @@ const MIRROR_HOSTS = [
   'cdn.prod.website-files.com',
   'assets.website-files.com',
   'assets-global.website-files.com',
+  'app-assets.website-files.com',
   'uploads-ssl.webflow.com',
   'global-uploads.webflow.com',
   'd3e54v103j8qbb.cloudfront.net',
@@ -80,9 +81,13 @@ function collectFromSrcset(value, base, out) {
   }
 }
 
+// Quoted URLs may legally contain parentheses, e.g. "Menu (1920 x 1080 px).png".
+export const CSS_URL = /url\(\s*(?:"([^"]*)"|'([^']*)'|([^)'"]+))\s*\)/g;
+
 function collectCssUrls(css, base, out) {
-  for (const m of css.matchAll(/url\(\s*(['"]?)([^'")]+)\1\s*\)/g)) {
-    if (!m[2].startsWith('data:') && !m[2].startsWith('#')) out.add(new URL(m[2], base).href);
+  for (const m of css.matchAll(CSS_URL)) {
+    const u = (m[1] ?? m[2] ?? m[3]).trim();
+    if (!u.startsWith('data:') && !u.startsWith('#')) out.add(new URL(u, base).href);
   }
   for (const m of css.matchAll(/@import\s+(?:url\()?\s*['"]([^'"]+)['"]/g)) out.add(new URL(m[1], base).href);
 }
