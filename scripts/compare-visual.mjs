@@ -25,6 +25,15 @@ const pages = manifest.pages.filter((p) => p.slug);
 const proxy = process.env.HTTPS_PROXY ? { server: process.env.HTTPS_PROXY } : undefined;
 const browser = await chromium.launch({ proxy });
 
+// Google Fonts load live. WebFont.js requests them protocol-relative, which is plain http on the local replica;
+// the sandbox proxy only tunnels https, so upgrade (production is served over https anyway).
+async function externalOk(route) {
+  const url = route.request().url();
+  if (!/^https?:\/\/(fonts\.(googleapis|gstatic)\.com|ajax\.googleapis\.com)\//.test(url)) return route.abort();
+  if (url.startsWith('https:')) return route.continue();
+  return route.fulfill({ response: await route.fetch({ url: url.replace(/^http:/, 'https:') }) });
+}
+
 async function sourceRoute(route) {
   const url = route.request().url();
   const asset = manifest.assets[url];
@@ -43,8 +52,7 @@ async function sourceRoute(route) {
       contentType: 'text/html; charset=utf-8',
     });
   }
-  if (/fonts\.(googleapis|gstatic)\.com|ajax\.googleapis\.com/.test(url)) return route.continue();
-  return route.abort();
+  return externalOk(route);
 }
 
 async function shoot(url, vp, file, isSource) {
@@ -52,13 +60,14 @@ async function shoot(url, vp, file, isSource) {
   const tab = await ctx.newPage();
   if (isSource) await tab.route('**/*', sourceRoute);
   // Playwright forces loopback through the browser proxy, so replica responses are fetched from Node instead.
+  // Playwright forces loopback through the browser proxy, so replica responses are fetched from Node instead.
   else await tab.route('**/*', async (r) => {
     const u = r.request().url();
     if (u.startsWith(BASE)) {
       const res = await fetch(u, { method: r.request().method(), redirect: 'manual' });
       return r.fulfill({ status: res.status, headers: Object.fromEntries(res.headers), body: Buffer.from(await res.arrayBuffer()) });
     }
-    return /fonts\.(googleapis|gstatic)\.com|ajax\.googleapis\.com/.test(u) ? r.continue() : r.abort();
+    return externalOk(r);
   });
   await tab.goto(url, { waitUntil: 'networkidle' });
   await settle(tab);

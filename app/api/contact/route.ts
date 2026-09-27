@@ -6,6 +6,14 @@ export const dynamic = 'force-dynamic';
 const json = (status: number, body: { ok: boolean; error?: string }) =>
   Response.json(body, { status, headers: { 'Cache-Control': 'no-store' } });
 
+function originHost(origin: string) {
+  try {
+    return new URL(origin).host;
+  } catch {
+    return null;
+  }
+}
+
 async function readLimited(req: Request): Promise<string | null> {
   if (!req.body) return '';
   const reader = req.body.getReader();
@@ -27,7 +35,7 @@ async function readLimited(req: Request): Promise<string | null> {
 export async function POST(req: Request) {
   const origin = req.headers.get('origin');
   const host = req.headers.get('x-forwarded-host') ?? req.headers.get('host');
-  if (!origin || !host || new URL(origin).host !== host) return json(403, { ok: false, error: 'forbidden' });
+  if (!origin || !host || originHost(origin) !== host) return json(403, { ok: false, error: 'forbidden' });
 
   if (!(req.headers.get('content-type') ?? '').startsWith('application/x-www-form-urlencoded')) {
     return json(415, { ok: false, error: 'unsupported content type' });
